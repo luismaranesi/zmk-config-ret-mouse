@@ -130,11 +130,11 @@
         mouse_layer {
             display-name = "mouse";
             bindings = <
-&kp ESC     &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp TAB                      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &msc SCRL_RIGHT  &mkp MB4    &mkp MB5
+&kp ESC     &trans          &trans          &trans          &trans          &kp TAB                      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &msc SCRL_RIGHT  &mkp MB4    &mkp MB5
 &kp LCTRL   &kp LEFT_SHIFT  &kp SPACE       &kp ENTER       &kp BACKSPACE   &kp DELETE                   &trans          &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans      &trans
 &kp LALT    &kp LGUI        &kp TAB         &kp ENTER       &kp SPACE       &kp BACKSPACE                &trans          &mkp LCLK       &mmv MOVE_DOWN  &mkp RCLK        &mkp MCLK   &trans
-&trans      &trans          &trans          &trans          &trans          &trans       &to BASE  &trans  &trans          &trans          &trans          &trans           &trans      &trans
-                            &kp LGUI        &kp LALT        &kp DELETE      &kp SPACE    &to BASE  &to BASE &kp SPACE       &kp ENTER       &trans          &trans
+&trans      &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &trans       &to BASE  &trans  &trans          &trans          &trans          &trans           &trans      &trans
+                            &kp LGUI        &kp LALT        &kp DELETE      &kp SPACE    &to BASE  &to BASE &kp SPACE       &mkp LCLK       &trans          &trans
             >;
         };
     };

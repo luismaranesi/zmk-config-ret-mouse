@@ -291,6 +291,7 @@ path.combo {
 </g>
 <g transform="translate(371, 210)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">PSCRN</text>
 </g>
 <g transform="translate(525, 210)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1320,6 +1321,9 @@ path.combo {
 </g>
 <g transform="translate(588, 98)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<a href="#default">
+<text x="0" y="0" class="key tap layer-activator">default</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(644, 91)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1464,9 +1468,15 @@ path.combo {
 </g>
 <g transform="translate(378, 291) rotate(30.0)" class="key held keypos-54">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key held"/>
+<a href="#default">
+<text x="0" y="0" class="key held tap layer-activator">default</text>
+</a><text x="0" y="38" class="key held hold">toggle</text>
 </g>
 <g transform="translate(518, 291) rotate(-30.0)" class="key held keypos-55">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key held"/>
+<a href="#default">
+<text x="0" y="0" class="key held tap layer-activator">default</text>
+</a><text x="0" y="38" class="key held hold">toggle</text>
 </g>
 <g transform="translate(580, 274) rotate(-22.5)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

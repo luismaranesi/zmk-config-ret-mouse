@@ -1,0 +1,17 @@
+parse_config:
+  raw_binding_map:
+    "&excel_filter_legacy": Filter
+    "&excel_freeze_panes": Freeze
+    "&excel_freeze_top": Top Row
+    "&excel_freeze_first": First Col
+    "&excel_auto_col": AutoFit C
+    "&excel_auto_row": AutoFit R
+    "&excel_borders_all": All Border
+    "&excel_borders_none": No Border
+    "&excel_table": Table
+    "&excel_sort_asc": Sort AZ
+    "&excel_sort_desc": Sort ZA
+    "&excel_remove_dupes": Dupes
+    "&excel_gridlines": Grid
+    "&tog EXCEL": Excel
+    "&to BASE": Base

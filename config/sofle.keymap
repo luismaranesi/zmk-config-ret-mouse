@@ -44,105 +44,105 @@
         excel_filter_legacy: excel_filter_legacy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
+            wait-ms = <80>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp D &kp F &kp F>, <&macro_release &kp LALT>;
+            bindings = <&kp LALT>, <&macro_wait_time 180>, <&kp D>, <&macro_wait_time 80>, <&kp F &kp F>;
         };
 
         excel_freeze_panes: excel_freeze_panes {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
+            wait-ms = <80>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp W &kp F &kp F>, <&macro_release &kp LALT>;
+            bindings = <&kp LALT>, <&macro_wait_time 180>, <&kp W>, <&macro_wait_time 80>, <&kp F &kp F>;
         };
 
         excel_freeze_top: excel_freeze_top {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
+            wait-ms = <80>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp W &kp F &kp R>, <&macro_release &kp LALT>;
+            bindings = <&kp LALT>, <&macro_wait_time 180>, <&kp W>, <&macro_wait_time 80>, <&kp F &kp R>;
         };
 
         excel_freeze_first: excel_freeze_first {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
+            wait-ms = <80>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp W &kp F &kp C>, <&macro_release &kp LALT>;
+            bindings = <&kp LALT>, <&macro_wait_time 180>, <&kp W>, <&macro_wait_time 80>, <&kp F &kp C>;
         };
 
         excel_auto_col: excel_auto_col {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
+            wait-ms = <80>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp H &kp O &kp I>, <&macro_release &kp LALT>;
+            bindings = <&kp LALT>, <&macro_wait_time 180>, <&kp H>, <&macro_wait_time 80>, <&kp O &kp I>;
         };
 
         excel_auto_row: excel_auto_row {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
+            wait-ms = <80>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp H &kp O &kp A>, <&macro_release &kp LALT>;
+            bindings = <&kp LALT>, <&macro_wait_time 180>, <&kp H>, <&macro_wait_time 80>, <&kp O &kp A>;
         };
 
         excel_borders_all: excel_borders_all {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
+            wait-ms = <80>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp H &kp B &kp A>, <&macro_release &kp LALT>;
+            bindings = <&kp LALT>, <&macro_wait_time 180>, <&kp H>, <&macro_wait_time 80>, <&kp B &kp A>;
         };
 
         excel_borders_none: excel_borders_none {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
+            wait-ms = <80>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp H &kp B &kp N>, <&macro_release &kp LALT>;
+            bindings = <&kp LALT>, <&macro_wait_time 180>, <&kp H>, <&macro_wait_time 80>, <&kp B &kp N>;
         };
 
         excel_table: excel_table {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
+            wait-ms = <80>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp A &kp T>, <&macro_release &kp LALT>;
+            bindings = <&kp LALT>, <&macro_wait_time 180>, <&kp A>, <&macro_wait_time 80>, <&kp T>;
         };
 
         excel_sort_asc: excel_sort_asc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
+            wait-ms = <80>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp A &kp S &kp A>, <&macro_release &kp LALT>;
+            bindings = <&kp LALT>, <&macro_wait_time 180>, <&kp A>, <&macro_wait_time 80>, <&kp S &kp A>;
         };
 
         excel_sort_desc: excel_sort_desc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
+            wait-ms = <80>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp A &kp S &kp D>, <&macro_release &kp LALT>;
+            bindings = <&kp LALT>, <&macro_wait_time 180>, <&kp A>, <&macro_wait_time 80>, <&kp S &kp D>;
         };
 
         excel_remove_dupes: excel_remove_dupes {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
+            wait-ms = <80>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp A &kp M>, <&macro_release &kp LALT>;
+            bindings = <&kp LALT>, <&macro_wait_time 180>, <&kp A>, <&macro_wait_time 80>, <&kp M>;
         };
 
         excel_gridlines: excel_gridlines {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
+            wait-ms = <80>;
             tap-ms = <40>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp W &kp V &kp G>, <&macro_release &kp LALT>;
+            bindings = <&kp LALT>, <&macro_wait_time 180>, <&kp W>, <&macro_wait_time 80>, <&kp V &kp G>;
         };
     };
 
@@ -170,7 +170,7 @@
         excel_combo {
             timeout-ms = <50>;
             key-positions = <55 38>;
-            bindings = <&sl EXCEL>;
+            bindings = <&tog EXCEL>;
         };
 
     };

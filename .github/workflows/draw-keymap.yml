@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "config/*.keymap"
+      - "config/keymap_drawer.config.yaml"
 
 jobs:
   draw:
@@ -26,9 +27,9 @@ jobs:
         run: |
           mkdir -p img
           # O comando parse transforma seu .keymap em algo que o desenhista entende
-          python3 -m keymap_drawer parse -z config/sofle.keymap > sofle_layout.yaml
+          python3 -m keymap_drawer -c config/keymap_drawer.config.yaml parse -z config/sofle.keymap > sofle_layout.yaml
           # O comando draw gera o SVG final
-          python3 -m keymap_drawer draw sofle_layout.yaml > img/keymap.svg
+          python3 -m keymap_drawer -c config/keymap_drawer.config.yaml draw sofle_layout.yaml > img/keymap.svg
 
       - name: Commit and Push
         run: |

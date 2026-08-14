@@ -31,3 +31,16 @@ parse_config:
     "&rgb_ug RGB_COLOR_HSB(145,70,8)": Mint
     "&rgb_ug RGB_COLOR_HSB(215,80,8)": Ocean
     "&rgb_ug RGB_COLOR_HSB(300,70,8)": Pink
+    "&mmv MOVE_UP": Move Up
+    "&mmv MOVE_LEFT": Move L
+    "&mmv MOVE_DOWN": Move Dn
+    "&mmv MOVE_RIGHT": Move R
+    "&msc SCRL_UP": Scr Up
+    "&msc SCRL_LEFT": Scr L
+    "&msc SCRL_DOWN": Scr Dn
+    "&msc SCRL_RIGHT": Scr R
+    "&mkp LCLK": L Click
+    "&mkp RCLK": R Click
+    "&mkp MCLK": M Click
+    "&mkp MB4": MB4 Back
+    "&mkp MB5": MB5 Fwd

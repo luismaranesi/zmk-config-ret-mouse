@@ -44,3 +44,23 @@ parse_config:
     "&mkp MCLK": M Click
     "&mkp MB4": MB4 Back
     "&mkp MB5": MB5 Fwd
+    "&tog AI": AI
+    "&kp LC(C)": Ctrl+C
+    "&kp LC(L)": Clear
+    "&kp LC(R)": Search
+    "&kp LC(U)": Clear Line
+    "&kp LC(W)": Del Word
+    "&kp LC(TAB)": Focus Next
+    "&kp LC(LS(TAB))": Focus Prev
+    "&kp LS(PG_UP)": Line Up
+    "&kp LS(PG_DN)": Line Dn
+    "&kp LC(A)": Ctrl+A
+    "&kp LC(E)": Ctrl+E
+    "&kp LA(B)": Word Left
+    "&kp LA(F)": Word Right
+    "&kp LA(BACKSPACE)": Del Word
+    "&kp LC(LS(C))": Term Copy
+    "&kp LC(LS(V))": Term Paste
+    "&kp LS(ENTER)": Newline
+    "&kp LC(LEFT)": Word Left
+    "&kp LC(RIGHT)": Word Right

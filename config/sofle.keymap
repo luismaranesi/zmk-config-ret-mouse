@@ -18,6 +18,7 @@
 #define ADJUST 4
 #define MOUSE  5
 #define EXCEL  6
+#define AI     7
 
 / {
     // Activate ADJUST layer by pressing raise and lower
@@ -173,6 +174,12 @@
             bindings = <&tog EXCEL>;
         };
 
+        ai_combo {
+            timeout-ms = <50>;
+            key-positions = <55 25>;
+            bindings = <&tog AI>;
+        };
+
     };
 
     keymap {
@@ -263,6 +270,17 @@
 &kp LS(SPACE)  &kp LC(SPACE)   &kp LC(MINUS)   &kp LC(LS(EQUAL)) &excel_borders_all &excel_borders_none           &kp LC(LS(LEFT))      &kp LC(LS(DOWN))    &kp LC(LS(UP))    &kp LC(LS(RIGHT))  &kp LC(B)          &kp LC(U)
 &kp ESC        &kp LC(Z)       &kp LC(X)       &kp LC(C)         &kp LC(V)         &kp LC(B)      &to BASE  &trans  &kp LC(LEFT)        &kp LC(DOWN)       &kp LC(UP)        &kp LC(RIGHT)      &kp LC(I)          &trans
                               &kp LGUI        &kp LALT          &kp DELETE        &kp SPACE       &to BASE  &to BASE &kp SPACE           &kp ENTER          &kp TAB           &kp F2
+            >;
+        };
+
+        ai_layer {
+            display-name = "AI";
+            bindings = <
+&kp ESC    &kp LC(C)       &kp LC(L)       &kp LC(R)      &kp LC(U)      &kp LC(W)                 &kp LC(TAB)    &kp LC(LS(TAB))  &kp PG_UP       &kp LS(PG_UP)    &msc SCRL_UP      &to BASE
+&kp TAB    &kp LC(A)       &kp LA(B)       &kp LA(F)      &kp LC(E)      &kp LA(BACKSPACE)         &kp HOME       &kp PG_UP        &kp UP          &kp PG_DN        &kp END          &kp DEL
+&trans     &kp LC(LS(C))   &kp LC(LS(V))   &kp LC(Z)      &kp LC(Y)      &kp LC(D)                 &kp INS        &kp LEFT         &kp DOWN        &kp RIGHT        &kp BACKSPACE    &kp ENTER
+&kp LCTRL  &kp LC(Z)       &kp LC(X)       &kp LC(C)      &kp LC(V)      &kp LC(B)  &to BASE  &trans  &kp LC(LEFT)  &kp LS(PG_DN)  &kp LS(PG_UP)  &kp LC(RIGHT)  &kp LC(LS(C))  &kp LC(LS(V))
+                          &kp LGUI        &kp LALT       &kp DELETE     &kp LS(ENTER) &to BASE  &to BASE &kp SPACE    &kp ENTER      &kp TAB        &kp ESC
             >;
         };
     };

@@ -64,3 +64,10 @@ parse_config:
     "&kp LS(ENTER)": Newline
     "&kp LC(LEFT)": Word Left
     "&kp LC(RIGHT)": Word Right
+    "&tog TABLET": Tablet
+    "&kp LA(TAB)": App Next
+    "&kp LS(LA(TAB))": App Prev
+    "&kp LGUI": Meta
+    "&kp C_VOL_UP": Vol Up
+    "&kp C_VOL_DN": Vol Dn
+    "&kp C_MUTE": Mute

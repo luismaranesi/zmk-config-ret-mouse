@@ -19,6 +19,7 @@
 #define MOUSE  5
 #define EXCEL  6
 #define AI     7
+#define TABLET 8
 
 / {
     // Activate ADJUST layer by pressing raise and lower
@@ -180,6 +181,12 @@
             bindings = <&tog AI>;
         };
 
+        tablet_combo {
+            timeout-ms = <50>;
+            key-positions = <55 17>;
+            bindings = <&tog TABLET>;
+        };
+
     };
 
     keymap {
@@ -281,6 +288,17 @@
 &trans     &kp LC(LS(C))   &kp LC(LS(V))   &kp LC(Z)      &kp LC(Y)      &kp LC(D)                 &kp INS        &kp LEFT         &kp DOWN        &kp RIGHT        &kp BACKSPACE    &kp ENTER
 &kp LCTRL  &kp LC(Z)       &kp LC(X)       &kp LC(C)      &kp LC(V)      &kp LC(B)  &to BASE  &trans  &kp LC(LEFT)  &kp LS(PG_DN)  &kp LS(PG_UP)  &kp LC(RIGHT)  &kp LC(LS(C))  &kp LC(LS(V))
                           &kp LGUI        &kp LALT       &kp DELETE     &kp LS(ENTER) &to BASE  &to BASE &kp SPACE    &kp ENTER      &kp TAB        &kp ESC
+            >;
+        };
+
+        tablet_layer {
+            display-name = "TABLET";
+            bindings = <
+&kp ESC    &none        &none        &none        &none        &kp TAB                    &kp LA(TAB)    &kp LS(LA(TAB))  &msc SCRL_UP    &kp C_VOL_UP    &mkp MB4    &mkp MB5
+&kp TAB    &kp LC(A)    &kp LC(Z)    &kp LC(C)    &kp LC(V)    &kp LC(LS(Z))              &kp LGUI       &none            &mmv MOVE_UP    &none           &kp C_MUTE  &kp C_VOL_DN
+&none      &none        &none        &none        &none        &none                      &msc SCRL_LEFT &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc SCRL_RIGHT &none
+&kp LCTRL  &kp LC(Z)    &kp LC(X)    &kp LC(C)    &kp LC(V)    &none       &to BASE  &none  &none          &none            &msc SCRL_DOWN  &none           &none      &none
+                        &kp LGUI     &kp LALT     &kp DELETE   &kp SPACE   &to BASE  &to BASE &kp SPACE    &mkp LCLK        &mkp RCLK       &mkp MCLK
             >;
         };
     };

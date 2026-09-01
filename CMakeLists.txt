@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20.0)
 
-if((NOT CONFIG_ZMK_SPLIT) OR CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
+if(CONFIG_ZMK_BLE AND ((NOT CONFIG_ZMK_SPLIT) OR CONFIG_ZMK_SPLIT_ROLE_CENTRAL))
   zephyr_library()
   # Custom behaviors use ZMK's public-in-practice behavior driver interface,
   # which is kept in the ZMK application's include directory in v0.3.

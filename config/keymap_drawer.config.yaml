@@ -14,6 +14,7 @@ parse_config:
     "&excel_remove_dupes": Dupes
     "&excel_gridlines": Grid
     "&tog EXCEL": Excel
+    "&studio_unlock": Studio Unlock
     "&to BASE": Base
     "&rgb_ug RGB_OFF": Quiet
     "&rgb_ug RGB_ON": RGB On

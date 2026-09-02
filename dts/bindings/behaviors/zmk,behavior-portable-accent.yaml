@@ -1,0 +1,3 @@
+description: Profile-selected portable Portuguese accent behavior
+compatible: "zmk,behavior-portable-accent"
+include: one_param.yaml

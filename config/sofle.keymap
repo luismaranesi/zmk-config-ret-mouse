@@ -20,6 +20,7 @@
 #define EXCEL  6
 #define AI     7
 #define TABLET 8
+#define ACCENT 9
 
 / {
     // Activate ADJUST layer by pressing raise and lower
@@ -39,6 +40,19 @@
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
             bindings = <&mo &tog>;
+        };
+
+        ht_accent: ht_accent {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <220>;
+            bindings = <&mo &kp>;
+        };
+
+        portable_accent: portable_accent {
+            compatible = "zmk,behavior-portable-accent";
+            #binding-cells = <1>;
         };
     };
 
@@ -151,15 +165,10 @@
     combos {
         compatible = "zmk,combos";
 
-        sym_combo {
-            timeout-ms = <50>;
-            key-positions = <55 52>;
-            bindings = <&mo SYMBOL>;
-        };
-
         adjust_combo {
             timeout-ms = <50>;
-            key-positions = <54 55>;
+            // NUM (53) + NAV (55): positions follow the physical thumb keys.
+            key-positions = <53 55>;
             bindings = <&mo ADJUST>;
         };
 
@@ -199,7 +208,7 @@
 &kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T                                     &kp Y      &kp U      &kp I                 &kp O    &kp P     &kp EQUAL
 &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F         &kp G                                     &kp H      &kp J      &kp K                 &kp L    &kp SEMI  &kp LEFT_BRACKET
 &kp LCTRL       &kp Z         &kp X         &kp C         &kp V         &kp B      &kp PSCRN         &kp C_MUTE        &kp N      &kp M      &kp COMMA             &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                              &kp LGUI      &kp LALT      &kp DELETE    &kp SPACE  &ht_numpad 1 1    &ht_nav 3 3  &kp SPACE  &kp ENTER  &kp NON_US_BACKSLASH  &kp SQT
+&kp LGUI      &kp LALT      &kp DELETE    &ht_numpad 1 1  &kp ENTER  &ht_nav 3 3  &kp SPACE  &mo SYMBOL  &kp NON_US_BACKSLASH  &ht_accent ACCENT SQT
             >;
 
             sensor-bindings =
@@ -251,10 +260,10 @@
             display-name = "ADJ";
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                     &rgb_ug RGB_COLOR_HSB(0,100,1)    &rgb_ug RGB_COLOR_HSB(30,100,1)  &rgb_ug RGB_COLOR_HSB(60,100,1)  &rgb_ug RGB_COLOR_HSB(120,100,1)  &rgb_ug RGB_COLOR_HSB(180,100,1)  &rgb_ug RGB_COLOR_HSB(250,100,1)
-&ext_power EP_TOG  &soft_off        &bootloader      &sys_reset       &none            &none                            &to BASE                          &rgb_ug RGB_OFF                  &rgb_ug RGB_ON                  &rgb_ug RGB_COLOR_HSB(32,90,3)    &rgb_ug RGB_COLOR_HSB(185,70,4)   &rgb_ug RGB_COLOR_HSB(285,80,5)
+&ext_power EP_TOG  &soft_off        &bootloader      &sys_reset       &studio_unlock   &none                            &to BASE                          &rgb_ug RGB_OFF                  &rgb_ug RGB_ON                  &rgb_ug RGB_COLOR_HSB(32,90,3)    &rgb_ug RGB_COLOR_HSB(185,70,4)   &rgb_ug RGB_COLOR_HSB(285,80,5)
 &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI                  &none                             &rgb_ug RGB_COLOR_HSB(0,80,8)    &rgb_ug RGB_COLOR_HSB(45,90,8)   &rgb_ug RGB_COLOR_HSB(145,70,8)   &rgb_ug RGB_COLOR_HSB(215,80,8)   &rgb_ug RGB_COLOR_HSB(300,70,8)
 &none              &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &to 0    &none  &none                             &none                            &none                            &none                             &none                             &none
-                                    &none            &none            &none            &none            &to BASE &to BASE &none                            &none                            &none                            &none
+                                    &kp CAPSLOCK     &none            &none            &none            &to BASE &to BASE &none                            &none                            &none                            &kp KP_NUMLOCK
             >;
         };
 
@@ -299,6 +308,17 @@
 &none      &none        &none        &none        &none        &none                      &msc SCRL_LEFT &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc SCRL_RIGHT &none
 &kp LCTRL  &kp LC(Z)    &kp LC(X)    &kp LC(C)    &kp LC(V)    &none       &to BASE  &none  &none          &none            &msc SCRL_DOWN  &none           &none      &none
                         &kp LGUI     &kp LALT     &kp DELETE   &kp SPACE   &to BASE  &to BASE &kp SPACE    &mkp LCLK        &mkp RCLK       &mkp MCLK
+            >;
+        };
+
+        accent_layer {
+            display-name = "ACCENT";
+            bindings = <
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &portable_accent 2 &portable_accent 11 &trans &trans  &trans &portable_accent 5 &portable_accent 3 &portable_accent 4 &trans &trans
+&trans &portable_accent 1 &portable_accent 6 &portable_accent 9 &portable_accent 10 &trans  &trans &trans &trans &portable_accent 7 &trans &trans
+&trans &trans &trans &portable_accent 8 &trans &trans &trans  &trans &trans &trans &trans &portable_accent 12 &trans &trans
+       &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
     };

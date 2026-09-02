@@ -14,6 +14,23 @@ parse_config:
     "&excel_remove_dupes": Dupes
     "&excel_gridlines": Grid
     "&tog EXCEL": Excel
+    "&studio_unlock": Studio Unlock
+    "&kp CAPSLOCK": Caps Lock
+    "&kp KP_NUMLOCK": Num Lock
+    "&ht_accent ACCENT SQT": Accent
+    "&mo SYMBOL": Sym
+    "&portable_accent 1": á
+    "&portable_accent 2": é
+    "&portable_accent 3": í
+    "&portable_accent 4": ó
+    "&portable_accent 5": ú
+    "&portable_accent 6": ã
+    "&portable_accent 7": õ
+    "&portable_accent 8": ç
+    "&portable_accent 9": à
+    "&portable_accent 10": â
+    "&portable_accent 11": ê
+    "&portable_accent 12": ô
     "&to BASE": Base
     "&rgb_ug RGB_OFF": Quiet
     "&rgb_ug RGB_ON": RGB On

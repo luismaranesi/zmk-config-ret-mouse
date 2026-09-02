@@ -346,15 +346,15 @@ path.combo {
 </g>
 <g transform="translate(518, 291) rotate(-30.0)" class="key keypos-55">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
-<text x="0" y="0" class="key tap">SPACE</text>
-</g>
-<g transform="translate(580, 274) rotate(-22.5)" class="key keypos-56">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#ACCENT">
 <text x="0" y="0" class="key tap layer-activator">ACCENT</text>
 </a><a href="#ACCENT">
-<text x="0" y="24" class="key hold layer-activator">ACCENT</text>
+<text x="0" y="38" class="key hold layer-activator">ACCENT</text>
 </a></g>
+<g transform="translate(580, 274) rotate(-22.5)" class="key keypos-56">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">SPACE</text>
+</g>
 <g transform="translate(644, 259)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Sym</text>
@@ -368,11 +368,11 @@ path.combo {
 <text x="0" y="0" class="key tap">Accent</text>
 </g>
 <g class="combo combopos-0">
-<path d="M448,291 l-51,0" class="combo"/>
-<path d="M448,291 l51,0" class="combo"/>
-<rect rx="6" ry="6" x="434" y="278" width="28" height="26" class="combo"/>
+<path d="M417,283 l-82,-7" class="combo"/>
+<path d="M417,283 l82,7" class="combo"/>
+<rect rx="6" ry="6" x="403" y="270" width="28" height="26" class="combo"/>
 <a href="#NAV">
-<text x="448" y="291" class="combo tap layer-activator">NAV</text>
+<text x="417" y="283" class="combo tap layer-activator">NAV</text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="333" y="270" width="28" height="26" class="combo"/>
@@ -676,11 +676,11 @@ path.combo {
 </text>
 </g>
 <g class="combo combopos-0">
-<path d="M448,291 l-51,0" class="combo"/>
-<path d="M448,291 l51,0" class="combo"/>
-<rect rx="6" ry="6" x="434" y="278" width="28" height="26" class="combo"/>
+<path d="M417,283 l-82,-7" class="combo"/>
+<path d="M417,283 l82,7" class="combo"/>
+<rect rx="6" ry="6" x="403" y="270" width="28" height="26" class="combo"/>
 <a href="#NAV">
-<text x="448" y="291" class="combo tap layer-activator">NAV</text>
+<text x="417" y="283" class="combo tap layer-activator">NAV</text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="333" y="270" width="28" height="26" class="combo"/>
@@ -953,11 +953,11 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M448,291 l-51,0" class="combo"/>
-<path d="M448,291 l51,0" class="combo"/>
-<rect rx="6" ry="6" x="434" y="278" width="28" height="26" class="combo"/>
+<path d="M417,283 l-82,-7" class="combo"/>
+<path d="M417,283 l82,7" class="combo"/>
+<rect rx="6" ry="6" x="403" y="270" width="28" height="26" class="combo"/>
 <a href="#NAV">
-<text x="448" y="291" class="combo tap layer-activator">NAV</text>
+<text x="417" y="283" class="combo tap layer-activator">NAV</text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="333" y="270" width="28" height="26" class="combo"/>
@@ -1209,12 +1209,12 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(518, 291) rotate(-30.0)" class="key trans keypos-55">
-<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(518, 291) rotate(-30.0)" class="key held keypos-55">
+<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key held"/>
 </g>
-<g transform="translate(580, 274) rotate(-22.5)" class="key held keypos-56">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(580, 274) rotate(-22.5)" class="key trans keypos-56">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(644, 259)" class="key trans keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1229,11 +1229,11 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M448,291 l-51,0" class="combo"/>
-<path d="M448,291 l51,0" class="combo"/>
-<rect rx="6" ry="6" x="434" y="278" width="28" height="26" class="combo"/>
+<path d="M417,283 l-82,-7" class="combo"/>
+<path d="M417,283 l82,7" class="combo"/>
+<rect rx="6" ry="6" x="403" y="270" width="28" height="26" class="combo"/>
 <a href="#NAV">
-<text x="448" y="291" class="combo tap layer-activator">NAV</text>
+<text x="417" y="283" class="combo tap layer-activator">NAV</text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="333" y="270" width="28" height="26" class="combo"/>
@@ -1486,12 +1486,12 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(316, 274) rotate(22.5)" class="key trans keypos-53">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(316, 274) rotate(22.5)" class="key held keypos-53">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
-<g transform="translate(378, 291) rotate(30.0)" class="key held keypos-54">
-<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key held"/>
+<g transform="translate(378, 291) rotate(30.0)" class="key trans keypos-54">
+<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(518, 291) rotate(-30.0)" class="key held keypos-55">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key held"/>
@@ -1513,11 +1513,11 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M448,291 l-51,0" class="combo"/>
-<path d="M448,291 l51,0" class="combo"/>
-<rect rx="6" ry="6" x="434" y="278" width="28" height="26" class="combo"/>
+<path d="M417,283 l-82,-7" class="combo"/>
+<path d="M417,283 l82,7" class="combo"/>
+<rect rx="6" ry="6" x="403" y="270" width="28" height="26" class="combo"/>
 <a href="#NAV">
-<text x="448" y="291" class="combo tap layer-activator">NAV</text>
+<text x="417" y="283" class="combo tap layer-activator">NAV</text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="333" y="270" width="28" height="26" class="combo"/>
@@ -1821,11 +1821,11 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g class="combo combopos-0">
-<path d="M448,291 l-51,0" class="combo"/>
-<path d="M448,291 l51,0" class="combo"/>
-<rect rx="6" ry="6" x="434" y="278" width="28" height="26" class="combo"/>
+<path d="M417,283 l-82,-7" class="combo"/>
+<path d="M417,283 l82,7" class="combo"/>
+<rect rx="6" ry="6" x="403" y="270" width="28" height="26" class="combo"/>
 <a href="#NAV">
-<text x="448" y="291" class="combo tap layer-activator">NAV</text>
+<text x="417" y="283" class="combo tap layer-activator">NAV</text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="333" y="270" width="28" height="26" class="combo"/>
@@ -2111,11 +2111,11 @@ path.combo {
 </text>
 </g>
 <g class="combo combopos-0">
-<path d="M448,291 l-51,0" class="combo"/>
-<path d="M448,291 l51,0" class="combo"/>
-<rect rx="6" ry="6" x="434" y="278" width="28" height="26" class="combo"/>
+<path d="M417,283 l-82,-7" class="combo"/>
+<path d="M417,283 l82,7" class="combo"/>
+<rect rx="6" ry="6" x="403" y="270" width="28" height="26" class="combo"/>
 <a href="#NAV">
-<text x="448" y="291" class="combo tap layer-activator">NAV</text>
+<text x="417" y="283" class="combo tap layer-activator">NAV</text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="333" y="270" width="28" height="26" class="combo"/>
@@ -2462,11 +2462,11 @@ path.combo {
 <text x="0" y="0" class="key tap">F2</text>
 </g>
 <g class="combo combopos-0">
-<path d="M448,291 l-51,0" class="combo"/>
-<path d="M448,291 l51,0" class="combo"/>
-<rect rx="6" ry="6" x="434" y="278" width="28" height="26" class="combo"/>
+<path d="M417,283 l-82,-7" class="combo"/>
+<path d="M417,283 l82,7" class="combo"/>
+<rect rx="6" ry="6" x="403" y="270" width="28" height="26" class="combo"/>
 <a href="#NAV">
-<text x="448" y="291" class="combo tap layer-activator">NAV</text>
+<text x="417" y="283" class="combo tap layer-activator">NAV</text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="333" y="270" width="28" height="26" class="combo"/>
@@ -2793,11 +2793,11 @@ path.combo {
 <text x="0" y="0" class="key tap">ESC</text>
 </g>
 <g class="combo combopos-0">
-<path d="M448,291 l-51,0" class="combo"/>
-<path d="M448,291 l51,0" class="combo"/>
-<rect rx="6" ry="6" x="434" y="278" width="28" height="26" class="combo"/>
+<path d="M417,283 l-82,-7" class="combo"/>
+<path d="M417,283 l82,7" class="combo"/>
+<rect rx="6" ry="6" x="403" y="270" width="28" height="26" class="combo"/>
 <a href="#NAV">
-<text x="448" y="291" class="combo tap layer-activator">NAV</text>
+<text x="417" y="283" class="combo tap layer-activator">NAV</text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="333" y="270" width="28" height="26" class="combo"/>
@@ -3096,11 +3096,11 @@ path.combo {
 </text>
 </g>
 <g class="combo combopos-0">
-<path d="M448,291 l-51,0" class="combo"/>
-<path d="M448,291 l51,0" class="combo"/>
-<rect rx="6" ry="6" x="434" y="278" width="28" height="26" class="combo"/>
+<path d="M417,283 l-82,-7" class="combo"/>
+<path d="M417,283 l82,7" class="combo"/>
+<rect rx="6" ry="6" x="403" y="270" width="28" height="26" class="combo"/>
 <a href="#NAV">
-<text x="448" y="291" class="combo tap layer-activator">NAV</text>
+<text x="417" y="283" class="combo tap layer-activator">NAV</text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="333" y="270" width="28" height="26" class="combo"/>

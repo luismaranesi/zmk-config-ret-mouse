@@ -34,13 +34,23 @@ static void q(struct zmk_behavior_binding_event *e, uint32_t key, bool down, uin
     zmk_behavior_queue_add(e, b, down, wait);
 }
 static void tap(struct zmk_behavior_binding_event *e, uint32_t key) { q(e, key, true, 22); q(e, key, false, 28); }
-static uint32_t hex_key(uint8_t n) { return n < 10 ? NUMBER_0 + n : A + n - 10; }
+/* HID usage order is 1..9, 0; arithmetic from NUMBER_0 is therefore wrong. */
+static uint32_t hex_key(uint8_t n) {
+    static const uint32_t number_keys[] = {NUMBER_0, NUMBER_1, NUMBER_2, NUMBER_3, NUMBER_4,
+                                            NUMBER_5, NUMBER_6, NUMBER_7, NUMBER_8, NUMBER_9};
+    return n < 10 ? number_keys[n] : A + n - 10;
+}
 static uint32_t pad_key(uint8_t n) { static const uint32_t k[] = {KP_N0, KP_N1, KP_N2, KP_N3, KP_N4, KP_N5, KP_N6, KP_N7, KP_N8, KP_N9}; return k[n]; }
 
 static void linux_unicode(struct zmk_behavior_binding_event *e, uint16_t cp) {
     q(e, LCTRL, true, 25); q(e, LSHFT, true, 25); tap(e, U); q(e, LSHFT, false, 25); q(e, LCTRL, false, 35);
+    /* Mask a physical Shift only after Ctrl+Shift+U was emitted. This keeps
+     * the introducer intact while ensuring hexadecimal digits are unshifted. */
+    struct zmk_behavior_binding mask = self; mask.param1 = CIRC_O + 1;
+    zmk_behavior_queue_add(e, mask, true, 0);
     for (int s = 12; s >= 0; s -= 4) tap(e, hex_key((cp >> s) & 0xf));
     tap(e, SPACE);
+    zmk_behavior_queue_add(e, self, true, 0);
 }
 static void windows_alt(struct zmk_behavior_binding_event *e, uint16_t cp) {
     /* Mask a physically held Shift so Shift+ACCENT still emits an Alt code. */
@@ -53,6 +63,7 @@ static void windows_alt(struct zmk_behavior_binding_event *e, uint16_t cp) {
 }
 static int pressed(struct zmk_behavior_binding *b, struct zmk_behavior_binding_event e) {
     if (b->param1 == 0) { zmk_hid_masked_modifiers_clear(); return ZMK_BEHAVIOR_OPAQUE; }
+    if (b->param1 == CIRC_O + 1) { zmk_hid_masked_modifiers_set(MOD_LSFT | MOD_RSFT); return ZMK_BEHAVIOR_OPAQUE; }
     if (b->param1 > CIRC_O) return -EINVAL;
     bool shifted = zmk_hid_get_explicit_mods() & (MOD_LSFT | MOD_RSFT);
     uint16_t cp = shifted ? upper[b->param1] : lower[b->param1];

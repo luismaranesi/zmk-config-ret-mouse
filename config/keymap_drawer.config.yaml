@@ -16,6 +16,7 @@ parse_config:
     "&tog EXCEL": Excel
     "&studio_unlock": Studio Unlock
     "&ht_accent ACCENT SQT": Accent
+    "&mo SYMBOL": Sym
     "&portable_accent 1": á
     "&portable_accent 2": é
     "&portable_accent 3": í

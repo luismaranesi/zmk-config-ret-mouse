@@ -314,10 +314,10 @@
         accent_layer {
             display-name = "ACCENT";
             bindings = <
-&trans &trans &trans &trans &trans &trans                       &trans &trans &trans &trans &trans &trans
-&trans &portable_accent 1 &portable_accent 2 &portable_accent 3 &portable_accent 4 &portable_accent 5  &trans &trans &trans &trans &trans &trans
-&trans &portable_accent 6 &portable_accent 7 &portable_accent 8 &portable_accent 9 &trans                       &trans &trans &trans &trans &trans &trans
-&trans &portable_accent 10 &portable_accent 11 &portable_accent 12 &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &portable_accent 2 &portable_accent 11 &trans &trans  &trans &portable_accent 5 &portable_accent 3 &portable_accent 4 &trans &trans
+&trans &portable_accent 1 &portable_accent 6 &portable_accent 9 &portable_accent 10 &trans  &trans &trans &trans &portable_accent 7 &trans &trans
+&trans &trans &trans &portable_accent 8 &trans &trans &trans  &trans &trans &trans &trans &portable_accent 12 &trans &trans
        &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };

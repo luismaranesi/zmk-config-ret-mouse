@@ -15,7 +15,7 @@ hint after reboot. No separate OS-mode state can drift out of sync.
 Hold ACCENT and press: `Q W E R T` for `á é í ó ú`; `A S D F` for
 `ã õ ç à`; and `Z X C` for `â ê ô`. Hold Shift as well for uppercase.
 
-The main thumb row is `NUM thumb | Enter || Space | NAV thumb | SYM`; SYM is
+The main thumb row is `NUM thumb | Enter || NAV thumb | Space | SYM`; SYM is
 a dedicated immediate momentary key, not a combo.
 
 `~` and backtick remain on SYM (and the existing NUM/SYM locations) as normal
